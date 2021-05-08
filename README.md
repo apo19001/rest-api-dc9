@@ -48,6 +48,8 @@ with their accompanying password hashes online.
 * [Making HTTP requests using kotlin] (https://stackoverflow.com/questions/46177133/http-request-in-kotlin)
 * [Kotlin tutorial that helped me] (https://www.youtube.com/watch?v=5flXf8nuq60)
 
+# ADDITONAL SOURCES THAT HELPED ME
+* [intellj idea spring boot plugin] (https://kotlinlang.org/docs/jvm-spring-boot-restful-db.html)
 
 # Future Work
 * Add token verification system in the future
