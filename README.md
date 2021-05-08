@@ -48,11 +48,11 @@ with their accompanying password hashes online.
 * [Making HTTP requests using kotlin] (https://stackoverflow.com/questions/46177133/http-request-in-kotlin)
 * [Kotlin tutorial that helped me] (https://www.youtube.com/watch?v=5flXf8nuq60)
 
-# ADDITONAL SOURCES THAT HELPED ME
+# additional plugins
 * [intellj idea spring boot plugin] (https://start.spring.io/)
 
 # Future Work
 * Add token verification system in the future
 * Add hash descryption module (get password hash -> decrypt in kotlin)
-* Find a more permanent website to host REST API
+* Find a permanent website to host REST API
 * Expand API work -> add more modules to learn
