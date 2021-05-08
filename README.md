@@ -48,7 +48,7 @@ with their accompanying password hashes online.
 * [Making HTTP requests using kotlin] (https://stackoverflow.com/questions/46177133/http-request-in-kotlin)
 * [Kotlin tutorial that helped me] (https://www.youtube.com/watch?v=5flXf8nuq60)
 
-# additional plugins
+# Additional sources that helped me
 * [intellj idea spring boot plugin] (https://start.spring.io/)
 
 # Future Work
