@@ -39,7 +39,7 @@ with their accompanying password hashes online.
 * This program used Intellij in order to help me build projects for me.
 
 
-# Useful Websites
+# Useful Websites / Sources that helped me
 
 * [DeepCloud9](http://dc9.x10host.com/)
 * [ngrok - api hosting](https://ngrok.com/)
