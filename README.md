@@ -49,7 +49,7 @@ with their accompanying password hashes online.
 * [Kotlin tutorial that helped me] (https://www.youtube.com/watch?v=5flXf8nuq60)
 
 # ADDITONAL SOURCES THAT HELPED ME
-* [intellj idea spring boot plugin] (https://kotlinlang.org/docs/jvm-spring-boot-restful-db.html)
+* [intellj idea spring boot plugin] (https://start.spring.io/)
 
 # Future Work
 * Add token verification system in the future
