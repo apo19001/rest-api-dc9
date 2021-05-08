@@ -8,11 +8,11 @@ import java.io.StringReader
 import java.security.KeyStore
 
 
-/* SOURCE
+/*
+    SOURCE(S)
     https://stackoverflow.com/questions/46177133/http-request-in-kotlin
     https://github.com/cbeust/klaxon#streaming-api
     https://developer.android.com/reference/android/util/JsonReader.html
-
 */
 
 class security (  val email: String,
@@ -24,13 +24,17 @@ class security (  val email: String,
     private var personCopy = arrayListOf<User>()
 
     private fun connecttodatabase() : String
-    // how can i be able to parse this link as a json file
+    // how can I be able to parse this link as a json file
     // got from https://stackoverflow.com/questions/46177133/http-request-in-kotlin
     // https://developer.android.com/reference/android/util/JsonReader.html
     // Here I learned how to query a api base using the java,net.HTTPURLConnection
 
+    /*
+     This code over here sends an api request and saves the json file as a
+     a string for it to be processed once.
+     */
     {
-        val url = URL("https://5a4148c6b98f.ngrok.io/") // encrypt this
+        val url = URL("http://16aa1aabe2ad.ngrok.io/") // encrypt this
         with(url.openConnection() as HttpURLConnection) {
             connectionCodeStatus = responseCode
             if (responseCode == 200) { // check if the connection work
@@ -46,6 +50,12 @@ class security (  val email: String,
         return jsonreading // the entire jsonstring for us to use
     }
 
+    /*
+       shovingUsersinArray()
+       this saves all the users in the
+       json file into personCopy - making
+       a bunch of users
+     */
     fun shovingUsersinArray(arrayParse: String)
     {
         // got help from the pasing method from https://github.com/cbeust/klaxon#streaming-api
@@ -61,11 +71,13 @@ class security (  val email: String,
         }
     }
 
+    // this returns the connection status of the file.
     fun connectionStatus() : Int
     {
         return connectionCodeStatus
     }
 
+    // this will help find the email that does/does not exist
     private fun findEmail() : Boolean
     {
         for (i in 0 .. personCopy.size)
@@ -76,6 +88,7 @@ class security (  val email: String,
         return false
     }
 
+    // get the id of the user
     private fun getID() : Int{
         for (i in 0 .. personCopy.size)
         {
@@ -85,7 +98,8 @@ class security (  val email: String,
         return -1 // didn't find the id for the user
     }
 
-    private fun getInformation(){
+    // will print out the information for the user
+    fun getInformation(){
         val idForMe = getID()
         for (i in 0 .. personCopy.size)
         {
@@ -100,6 +114,7 @@ class security (  val email: String,
         }
     }
 
+
     private fun findPassword() : Boolean
     {
         for (i in 0 .. personCopy.size)
@@ -110,6 +125,7 @@ class security (  val email: String,
         return false
     }
 
+    // check if the email and the password are good
     private fun canLogin() : Boolean
     {
         return findEmail() && findPassword()
@@ -123,8 +139,7 @@ class security (  val email: String,
         val jsonString: String = connecttodatabase()
         val parseString = shovingUsersinArray(jsonString) // run the api request, plug it into the user array once.
         if(canLogin()){
-            println("you are logged in!")
-            getInformation()
+            println("you are logged in!") // you can now access the database
         }
         else {
             print("LOGIN FAILURE!")

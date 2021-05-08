@@ -7,8 +7,8 @@ fun main(args: Array<String>)
 // make sure to check everything - this is what we will build off of in the future.
 
 {
-    val connectMe = security("oaks@gmail.com", "random"); // this will allow me to
+    val connectMe = security("apostol.bill@gmail.com", "random"); // this will allow me to
     var status = connectMe.connectionStatus()
-
+    connectMe.getInformation() // print out all the user information
 
 }
