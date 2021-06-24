@@ -43,13 +43,13 @@ with their accompanying password hashes online.
 
 * [DeepCloud9](http://dc9.x10host.com/)
 * [ngrok - api hosting](https://ngrok.com/)
-* [klaxon - json parser] (https://github.com/cbeust/klaxon)
-* [REST API - How to make with kotlin] (https://kotlinlang.org/docs/jvm-spring-boot-restful.html)
-* [Making HTTP requests using kotlin] (https://stackoverflow.com/questions/46177133/http-request-in-kotlin)
-* [Kotlin tutorial that helped me] (https://www.youtube.com/watch?v=5flXf8nuq60)
+* [klaxon - json parser](https://github.com/cbeust/klaxon)
+* [REST API - How to make with kotlin](https://kotlinlang.org/docs/jvm-spring-boot-restful.html)
+* [Making HTTP requests using kotlin](https://stackoverflow.com/questions/46177133/http-request-in-kotlin)
+* [Kotlin tutorial that helped me](https://www.youtube.com/watch?v=5flXf8nuq60)
 
 # Additional sources that helped me
-* [intellj idea spring boot plugin] (https://start.spring.io/)
+* [intellj idea spring boot plugin](https://start.spring.io/)
 
 # Future Work
 * Add token verification system in the future
